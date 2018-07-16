@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="css/format.css">
   <!-- Ow Carousel -->
   <link rel="stylesheet" type="text/css" href="css/owl-carousel.css">
-
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
   <!-- incio div all -->
@@ -31,11 +32,11 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
               <li><a href="/">Início</a></li>
-              <li><a class="page-scroll" href="#">O que é</a></li>
-              <li><a class="page-scroll" href="#">Como Funciona</a></li>
-              <li><a class="page-scroll" href="#">Vantagens</a></li>              
-              <li><a class="page-scroll" href="#">Quanto Custa</a></li>
-              <li><a class="page-scroll" href="#">Depoimentos</a></li>
+              <li><a class="page-scroll" href="#institucional">O que é</a></li>
+              <li><a class="page-scroll" href="#video">Como Funciona?</a></li>
+              <li><a class="page-scroll" href="#vantagens">Vantagens</a></li>              
+              <li><a class="page-scroll" href="#teste">Teste Grátis</a></li>
+              <li><a class="page-scroll" href="#depoimentos">Depoimentos</a></li>
               <li><a class="page-scroll login" href="#" data-toggle="modal" data-target="#modalLogin">Entrar</a></li>
             </ul>
           </div>
@@ -47,7 +48,8 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Acesso ao painel:</h5>
+            <!--<h5 class="modal-title" id="exampleModalLongTitle">Acesso ao painel:</h5>-->
+            <img src="img/logo.png" alt="IntegraZap" title="IntegraZap">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -55,13 +57,13 @@
           <div class="modal-body">
             <form>
               <div class="form-group">
-                <label for="exampleInputEmail1">Email:</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu email">
+                <!-- <label for="exampleInputEmail1">Email:</label>-->
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email:">
                 <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">Senha</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <!--<label for="exampleInputPassword1">Senha</label>-->
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha:">
               </div>
               <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -84,7 +86,7 @@
     </div>
     <!-- fim banner -->
     <!-- institucional -->
-    <div id="box-institucional" class="box-institucional">
+    <div id="institucional" class="box-institucional">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-sm-12">
@@ -102,7 +104,7 @@
    </div>
    <!-- fim institucional -->
    <!-- box video -->
-   <div id="box-video" class="box-video">
+   <div id="video" class="box-video">
     <div class="row">
       <div class="col-lg-6 col-sm-12">
        <div class="texto-video">
@@ -131,7 +133,7 @@
 </div>
 <!-- fim video -->
 <!-- box vantagens -->
-<div id="box-vantagem" class="box-vantagem">
+<div id="vantagens" class="box-vantagem">
   <div class="container">
     <h2>Painel Administrativo <span>com diversas vantagens</span></h2>
     <div class="row">
@@ -202,7 +204,7 @@
 </div>
 <!-- fim box porque -->
 <!-- fim box instale -->
-<div id="box-instalar" class="box-instalar">
+<div id="teste" class="box-instalar">
   <div class="container">
     <h2>Instale o IntegraZap em seu site!</h2>
     <p>Instale o IntegraZap e ganhe <span><b>15 dias grátis</b></span> para testar a ferramenta em seu site.</p>
@@ -213,7 +215,7 @@
 </div>
 <!-- fim box instale -->
 <!-- box depoimentos -->
-<div id="box-depoimentos" class="box-depoimentos">
+<div id="depoimentos" class="box-depoimentos">
   <div class="container">
     <h2>Depoimentos</h2>
     <span class="textoDep">Depoimentos de usuários que já utilizam o IntegraZap em seu site</span>
@@ -229,7 +231,7 @@
        <div class="boxDep">
          <h3>Luís Ukita</h3>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
-         <span>GRXSP<em>grxsp.com.br</em></span>
+         <span>Beni Móveis <em>benimoveis.com.br</em></span>
        </div>
      </div>
    </div>
@@ -258,34 +260,54 @@
 <!-- fim box preço -->
 </div>
 <!-- fim div all -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<footer>
+  <div class="rodape">
+    <div class="container">
+      <div class="row footerContato">
+        <div class="footerSocial col-sm-12 col-md-3 col-lg-3">
+          <a href="/"><img src="img/logo-footer.png" alt="IntegraZap" title="IntegraZap"></a>
+        </div>
+        <div class="col-sm-12 col-md-9 col-lg-9">
+          <ul>
+            <!--<li><a class="page-scroll" href="/">Home</a> </li>-->
+            <li><a class="page-scroll" href="/">O que é?</a> </li>
+            <li><a class="page-scroll" href="/">Como funciona?</a> </li>
+            <li><a class="page-scroll" href="/">Vantagens</a></li>
+            <!--<li><a class="page-scroll" href="/">Por que ter?</a></li>-->
+            <!--<li><a class="page-scroll" href="/">Instalar</a></li>-->
+            <li><a class="page-scroll" href="/">Depoimentos</a></li>
+            <li><a class="page-scroll" href="/">Quanto custa?</a></li>
+          </ul>
+        </div>
+        <!--<div class="col-sm-12 col-md-6 col-lg-3">
+          <ul>
+            <li><a class="facebook" href="https://www.facebook.com/agenciatrends/"></a></li>
+            <li><a class="twitter" href="https://twitter.com/agenciatrends"></a></li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <div class="footerCopyright">
+    <div class="container">
+      <div class="col instiFooter">
+        <p>Copyright © 2018. IntegraZap</p>
+      </div>
+    </div>
+  </div>
+</footer>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <!-- js jquery -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
+<script src="js/classie.js"></script>
+<script src="js/cbpanimatedheader.js"></script>
+<script src="js/freelancer.js"></script>
 <!-- Carousel slides home  -->
 <script src="js/owl-carousel-min.js"></script>
-
 <script>
   $('.owl-carousel').owlCarousel({
     loop: true,
@@ -304,6 +326,11 @@
       }
     }
   })
+</script>
+<script type="text/javascript">
+  $(document).on('click', function(){
+   $('.navbar-collapse').collapse('hide');
+ });
 </script>
 </body>
 </html>
