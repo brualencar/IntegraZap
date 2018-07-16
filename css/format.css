@@ -11,7 +11,7 @@ h3 {color: #212331;font-family: 'Poppins', sans-serif;}
 p  {font:16px/20px Arial; }
 
 /* TOPO */
-.topo-home .fixed-top { background: #f9f9f9; border-bottom: 1px solid #efefef; padding: 25px;}
+.topo-home .fixed-top { background: #f9f9f9; border-bottom: 1px solid #efefef; }
 .topo-home .navbar-brand>img { max-width:100%;} 
 .topo-home .fixed-top .navbar-brand { width: 120px; height:auto; -webkit-transition: all .3s; -moz-transition: all .3s; transition: all .3s;}
 .topo-home .fixed-top.navbar-shrink .navbar-brand{ width: 100px;}
@@ -183,7 +183,7 @@ footer .footerCopyright { background: #1c1f2f; padding: 20px;}
 
 	.topo-home .navbar-nav li a { font-size: 14px; line-height: 2.5; padding: 0;}
 	.navbar-nav { margin-top: 20px;}
-
+	.banner-home { margin-top: 57px;}
 	.box-institucional { padding: 60px 0 60px;}
 	.box-institucional img { display: none;}
 	.box-video { max-height: inherit;}
