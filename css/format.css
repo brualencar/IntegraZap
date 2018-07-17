@@ -39,7 +39,7 @@ p  {font:16px/20px Arial; }
 .navbar-default, .navbar-inverse { border: 0;}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover { background:#66CC00; color:#fff; }
 .navbar-dark .navbar-toggler-icon { background-image: none;}
-.navbar-toggler-icon::before {content: "\f0c9"; color: #46ca58; font-family: "FontAwesome"; font-size: 24px;}
+.navbar-toggler-icon::before {content: "\f0c9"; color: #46ca58; font-family: "Font Awesome\ 5 Free"; font-weight: 900; font-size: 24px;}
 .topo-home button { outline: 0;}
 
 /* BANNER HOME */
