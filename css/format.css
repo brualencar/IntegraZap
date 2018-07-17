@@ -33,7 +33,7 @@ p  {font:16px/20px Arial; }
 .topo-home .navbar-nav li a { color: #212331; font: 300 14px 'Poppins', sans-serif; text-decoration: none; padding: 0 12px; }
 .topo-home .navbar-nav li .login { border-radius: 10px; color: #46ca58; font-weight: 400;}
 .topo-home .navbar-nav li .login:hover { color: #333; }
-.topo-home .navbar-nav li .login::before { content: "\f007"; font-family: "FontAwesome"; margin-right: 5px; font-size: 16px; }
+.topo-home .navbar-nav li .login::before { content: "\f007"; font-family: "Font Awesome\ 5 Free"; font-weight: 900; margin-right: 5px; font-size: 16px; }
 .topo-home .navbar-nav li a:hover { color:#46ca58; transition: all .6s ease; }
 .topo-home .navbar .navbar-nav li a:focus { outline: 0;}
 .navbar-default, .navbar-inverse { border: 0;}
