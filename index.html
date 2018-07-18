@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/swiper-customizado.css" />
+  <link rel="stylesheet" type="text/css" href="css/swiper-customizado.css" />
   <!-- css custom -->
   <link rel="stylesheet" href="css/format.css">
   <!-- Ow Carousel -->
@@ -58,23 +58,18 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <!-- <label for="exampleInputEmail1">Email:</label>-->
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email:">
-                <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-              </div>
-              <div class="form-group">
-                <!--<label for="exampleInputPassword1">Senha</label>-->
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha:">
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
-              </div>
-              <button type="submit" class="btn btn-primary">Entrar</button>
-            </form>
-          </div>
+           <form id="formLogin">
+            <div class="form-label-group">
+              <input type="text" id="email" class="form-control valida" oninput="this.className = ''" placeholder="Digite seu email" data-original-title="informe um email válido" required>
+              <label for="inputEmail">Digite seu email:</label>
+            </div> 
+            <div class="form-label-group">
+              <input type="password" pattern=".{8,}" id="senha" class="form-control" placeholder="Digite sua senha:" title="oito ou mais caracteres" oninput="this.className = ''" data-original-title="Digite uma senha" minLength="6" required>
+              <label for="inputPassword">Digite sua senha:</label>
+            </div>
+            <button type="submit" id="submit" class="btn btn-primary">Entrar</button>
+          </form>
+        </div>
           <!--<div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
@@ -88,9 +83,21 @@
       <div class="slide1 swiper-container">
         <div class="swiper-wrapper">
           <div class="banner1 swiper-slide">
-            <a href="/servicos/otimizacao-de-sites-seo.html"><img src="img/banner-home.jpg" alt="Aumente suas vendas!" title="Aumente suas vendas!" /></a>
+            <a href="/cadastro"><img src="img/banner-home.jpg" alt="Aumente suas vendas!" title="Aumente suas vendas!" /></a>
             <div class="caption">
               <p>Aumente suas vendas!<span>Traga os clientes do seu site direto para o seu WhatsApp</span></p>
+            </div>
+          </div>
+          <div class="banner1 swiper-slide">
+            <a href="/cadastro"><img src="img/banner-home-2.jpg" alt="Captura de contatos garantida!" title="Captura de contatos garantida!"/></a>
+            <div class="caption">
+              <p>É mais que um link do WhatsApp!<span>Com o IntegraZap, você tem a garantia de obter os dados do usuário mesmo que este não conclua o registro.</span></p>
+            </div>
+          </div>
+          <div class="banner1 swiper-slide">
+            <a href="/cadastro"><img src="img/banner-home-3.jpg" alt="15 dias grátis!" title="15 dias grátis!"/></a>
+            <div class="caption">
+              <p>Teste o Integrazap!<span>Instale o IntegraZap e ganhe <b>15 dias grátis</b> para testar a ferramenta em seu site.</span></p>
             </div>
           </div>
         </div>
@@ -225,7 +232,7 @@
     <h2>Instale o IntegraZap em seu site!</h2>
     <p>Instale o IntegraZap e ganhe <span><b>15 dias grátis</b></span> para testar a ferramenta em seu site.</p>
     <div class="btnInstalar col-md-6">
-      <a href="" class="btn">Instalar agora</a>
+      <a href="/cadastro" class="btn">Instalar agora</a>
     </div>
   </div>
 </div>
@@ -238,9 +245,9 @@
     <div class="owl-carousel">
       <div class="item">
        <div class="boxDep">
-         <h3>Luís Ukita</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
-         <span>Beni Móveis <em>benimoveis.com.br</em></span>
+         <h3>Claudemir Lopes</h3>
+         <p>Tenho acompanhado o aumento do número de contatos via WhatsApp. Quando o contato é realizado por texto, aparece o nome, telefone, e-mail e endereço. Ficou muito bom.</p>
+         <span>GRXSP <em><a href="https://www.grxsp.com.br/" target="_blank">grxsp.com.br</a></em></span>
        </div>
      </div>
      <div class="item">
@@ -255,7 +262,7 @@
 </div>
 <!-- fim box depoimentos -->
 <!-- box preço -->
-<div id="box-preco" class="box-preco">
+<div id="preco" class="box-preco">
   <div class="container">
     <h2>Quanto custa?</h2>
     <div class="boxPreco col-lg-6">
@@ -286,13 +293,13 @@
         <div class="col-sm-12 col-md-9 col-lg-9">
           <ul>
             <!--<li><a class="page-scroll" href="/">Home</a> </li>-->
-            <li><a class="page-scroll" href="/">O que é?</a> </li>
-            <li><a class="page-scroll" href="/">Como funciona?</a> </li>
-            <li><a class="page-scroll" href="/">Vantagens</a></li>
+            <li><a class="page-scroll" href="#institucional">O que é?</a> </li>
+            <li><a class="page-scroll" href="#video">Como funciona?</a> </li>
+            <li><a class="page-scroll" href="#vantagens">Vantagens</a></li>
             <!--<li><a class="page-scroll" href="/">Por que ter?</a></li>-->
             <!--<li><a class="page-scroll" href="/">Instalar</a></li>-->
-            <li><a class="page-scroll" href="/">Depoimentos</a></li>
-            <li><a class="page-scroll" href="/">Quanto custa?</a></li>
+            <li><a class="page-scroll" href="#depoimentos">Depoimentos</a></li>
+            <li><a class="page-scroll" href="#preco">Quanto custa?</a></li>
           </ul>
         </div>
         <!--<div class="col-sm-12 col-md-6 col-lg-3">
